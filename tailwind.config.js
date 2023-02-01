@@ -3,11 +3,14 @@ module.exports = {
   purge: ["./src/index.html"],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    colors: {
-      transparent: "transparent",
-      current: "currentColor",
-      sunflower: "#E6D029",
-      valhalla: "#201852",
+    extend: {
+      colors: {
+        transparent: "transparent",
+        current: "currentColor",
+        sunflower: "#E6D029",
+        valhalla: "#201852",
+        cream: "#F3EEE4",
+      },
     },
   },
   variants: {},

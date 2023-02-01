@@ -7,18 +7,20 @@
     <link href="/dist/output.css" rel="stylesheet" />
     <script type="module" src="app.js"></script>
   </head>
-  <body>
-    <header class="bg-sunflower flex flex-row justify-center py-10">
+  <body class="mx-auto bg-cream">
+    <header
+      class="bg-sunflower flex flex-col md:flex-row justify-center items-center py-10"
+    >
       <img
-        class="inline-block h-72 rounded-full mx-auto"
+        class="inline-block h-72 rounded-full mx-10"
         src="assets/images/profile pic.jpg"
         alt="profile picture"
       />
-      <div class="px-5 py-5">
-        <h2>Hello there! 👋</h2>
-        <h1>I'm Paulino.</h1>
-        <h2>I'm a Frontend Engineer</h2>
-        <p>
+      <div class="flex flex-col mx-10">
+        <h2 class="text-xl font-semibold">Hello there! 👋</h2>
+        <p class="text-2xl text-red-500 font-bold">I'm Paulino.</p>
+        <h2 class="text-xl font-semibold">I'm a Frontend Engineer</h2>
+        <p class="break-words w-3/4 mt-5">
           Welcome to my website! Here you can have more info about me and my
           work
         </p>
