@@ -6,8 +6,9 @@
     <title>Paulino Junior | Front end Developer</title>
     <link href="/dist/output.css" rel="stylesheet" />
     <script type="module" src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
   </head>
-  <body class="bg-cream">
+  <body class="bg-cream overflow-x-hidden">
     <div class="flex flex-col items-center h-screen">
       <header
         class="w-screen h-full md:h-96 p-6 bg-sunflower flex justify-center items-center text-valhalla"
@@ -34,7 +35,7 @@
       <section
         class="w-screen p-6 flex justify-center items-center text-valhalla"
       >
-        <div class="w-3/4 flex h-full gap-x-10 flex-col">
+        <div class="w-3/4 flex h-full gap-x-10 flex-col justify-center">
           <h1 class="text-left text-2xl font-bold">About me</h1>
           <p class="mt-5">
             I am a Frontend Developer with 5+ years of experience. I hold a
@@ -64,6 +65,35 @@
               <p class="text-center">⭐ ⭐ ⭐</p>
               <p class="text-center">Intermediate</p>
             </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="w-screen p-6 flex justify-center items-center text-sunflower bg-valhalla"
+      >
+        <div class="w-3/4 flex flex-col md:flex-row h-full items-center">
+          <div class="flex flex-col gap-10  md:w-2/4">
+            <h1 class="text-left text-2xl font-bold">Skillset</h1>
+            <p>
+              Throughout my career I have worked with multiple technologies, the
+              word sphere on the right includes the most important ones.
+            </p>
+            <p>
+              My main skill is <span class="text-red-500">JavaScript</span>, i
+              have 5+ years of working experience with it, and a strong passion
+              for this programming language.
+            </p>
+            <p>
+              I also highlight skills like
+              <span class="text-red-500">CSS</span> and preprocessors like
+              <span class="text-red-500">SASS</span> and
+              <span class="text-red-500">Stylus</span> and JS Frameworks like
+              <span class="text-red-500">React</span> and
+              <span class="text-red-500">Angular</span>
+            </p>
+          </div>
+          <div class="w-2/4 flex justify-center">
+            <span class="tagContent"></span>
           </div>
         </div>
       </section>
@@ -234,5 +264,54 @@
         <a href="https://github.com/Paulinojr"></a>
       </li>
     </ul> -->
+    <script>
+      const myTags = [
+        "JavaScript",
+        "CSS",
+        "HTML",
+        "tailwindcss",
+        "ES6+",
+        "React",
+        "Python",
+        "Java",
+        "git",
+        "Wordpress",
+        "Node.js",
+        "Neo4j",
+        "PHP",
+        "MySQL",
+        "jQuery",
+        "Ionic",
+        "Angular",
+        "Vue.js",
+        "SASS",
+        "Stylus",
+        "Bootstrap",
+        "Parcel",
+        "Bulma",
+        "Next.js",
+        "Adobe XD",
+        "Figma",
+        "TypeScript",
+      ];
+
+      const tagCloud = TagCloud(".tagContent", myTags, {
+        // radius in px
+        radius: 200,
+
+        // animation speed
+        // slow, normal, fast
+        maxSpeed: "normal",
+        initSpeed: "normal",
+
+        // 0 = top
+        // 90 = left
+        // 135 = right-bottom
+        direction: 135,
+
+        // interact with cursor move on mouse out
+        keep: true,
+      });
+    </script>
   </body>
 </html>
