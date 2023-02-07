@@ -6,8 +6,15 @@
     <title>Paulino Junior | Front end Developer</title>
     <link href="/dist/output.css" rel="stylesheet" />
     <script type="module" src="app.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu Mono:wght@100;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu Mono:wght@100;400;700;900&display=swap" rel="stylesheet">
+     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    
+
   </head>
   <body class="bg-cream overflow-x-hidden">
     <div class="flex flex-col items-center h-screen">
@@ -263,16 +270,61 @@
         class="w-screen p-6 flex justify-center items-center text-valhalla bg-sunflower"
       >
         <div class="w-3/4 flex flex-col md:flex-row h-full items-center gap-5">
-          <div class="flex flex-col gap-10 md:w-2/4">
+          <div class="flex flex-col gap-10">
             <h1 class="text-left text-2xl font-bold">Projects</h1>
-            <div class="flex justify-between">
-              <div class="slider"></div>
+            <div class="flex justify-between gap-5">
+              <div class="swiper max-w-2xl">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"> <img src="assets/images/TYP01.png" alt="TYP01 chatbot UI"></div>
+                  <div class="swiper-slide"> <img src="assets/images/typ01-2.png" alt="TYP01 chatbot UI second slide"></div>
+                  <div class="swiper-slide"> <img src="assets/images/typ01-mobile.png" alt="TYP01 chatbot UI third slide"></div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+
               <div class="flex flex-col gap-5">
                   <h1 class="text-xl">TYP01</h1>
                   <p>
                     A chatbot UI that integrates with an IBM
                     Watson bot and allows users to ask questions about the university I
-                    studied in.
+                    studied in. 
+                    I designed and developed the UI using Adobe XD, React and styled-components.
+                    I also developed an API with node.js to fetch data from the IBM Watson bot.
+                  </p>
+                  <div class="flex gap-2">
+                    <span class="flex justify-center items-center bg-monarch text-valhalla rounded-full p-4  h-[10px] text-xs">
+                     React
+                    </span>
+                    <span class="flex justify-center items-center bg-monarch text-valhalla rounded-full p-4  h-[10px] text-xs">
+                      styled-components
+                    </span>
+                    <span class="flex justify-center items-center bg-monarch text-valhalla rounded-full p-4  h-[10px] text-xs">
+                      Adobe XD
+                    </span>
+                    <span class="flex justify-center items-center bg-monarch text-valhalla rounded-full p-4  h-[10px] text-xs">
+                      Node.js
+                    </span>
+                    <span class="flex justify-center items-center bg-monarch text-valhalla rounded-full p-4  h-[10px] text-xs">
+                      Neo4j
+                    </span>
+                  </div>
+                  
+                  <p>
+                    <strong>Link:</strong>
+                    <a href="https://github.com/Paulinojr/TYP01" target="_blank">https://github.com/Paulinojr/TYP01</a>
+                  </p>
+              </div>
+            </div>
+            <div class="flex justify-between gap-5">
+              <div class="flex flex-col gap-5">
+                  <h1 class="text-xl">Randomfy</h1>
+                  <p>
+                    The purpose of this web app is to "fix"
+                    the Spotify's shuffle (which isn't really shuffle). The idea is to
+                    offer a feature that organizes a playlist truly randomly on the queue,
+                    along with some cool user statistics.
+                    I designed it with adobe XD and developed with React
                   </p>
                   <div class="flex gap-2">
                     <span class="flex justify-center items-center bg-monarch text-valhalla rounded-full p-4  h-[5px] text-xs">
@@ -282,188 +334,70 @@
                       styled-components
                     </span>
                     <span class="flex justify-center items-center bg-monarch text-valhalla rounded-full p-4  h-[5px] text-xs">
-                      Node.js
-                    </span>
-                    <span class="flex justify-center items-center bg-monarch text-valhalla rounded-full p-4  h-[5px] text-xs">
-                      Neo4j
+                      Adobe XD
                     </span>
                   </div>
                   
                   <p>
                     <strong>Link:</strong>
-                    <a href="#">https://paulinojunior.com.br</a>
+                    <a href="https://github.com/Paulinojr/randomfy" target="_blank">https://github.com/Paulinojr/randomfy</a>
                   </p>
               </div>
+              <img src="assets/images/Randomfy 1.jpg" class="max-w-2xl">
+            </div>
+
+            <div class="flex justify-between gap-5 mt-36">
+              <img src="assets/images/music-madness.png" class="max-w-2xl">
+
+              <div class="flex flex-col gap-5">
+                  <h1 class="text-xl">Music Madness</h1>
+                  <p>
+                    Simples Music Brack game. You type an artist and choose the tournament size, than the app
+                    connects to the Deezer API and brings random tracks that face each other in duels.
+                  </p>
+                  <div class="flex gap-2">
+                    <span class="flex justify-center items-center bg-monarch text-valhalla rounded-full p-4  h-[5px] text-xs">
+                     React
+                    </span>
+                    <span class="flex justify-center items-center bg-monarch text-valhalla rounded-full p-4  h-[5px] text-xs">
+                      styled-components
+                    </span>
+                    <span class="flex justify-center items-center bg-monarch text-valhalla rounded-full p-4  h-[5px] text-xs">
+                      Adobe XD
+                    </span>
+                  </div>
+                  
+                  <p>
+                    <strong>Link:</strong>
+                    <a href="https://github.com/Paulinojr/musicmadness" target="_blank">https://github.com/Paulinojr/musicmadness</a>
+                  </p>
+              </div>
+            </div>
+
+            <div class="flex justify-between gap-5 mt-36">
+              <div class="flex flex-col gap-5">
+                  <h1 class="text-xl">This website</h1>
+                  <p>
+                    I have also designed and developed this portfolio website. I used Figma for the design and TailwindCSS for the styling.
+                    You can see that from the initial designs it had a different palette of colors, that I changed for a better contrast.
+                  </p>
+                  <div class="flex gap-2">
+                    <span class="flex justify-center items-center bg-monarch text-valhalla rounded-full p-4  h-[5px] text-xs">
+                     tailwindcss
+                    </span>
+                    <span class="flex justify-center items-center bg-monarch text-valhalla rounded-full p-4  h-[5px] text-xs">
+                      Figma
+                    </span>
+                    <span class="flex justify-center items-center bg-monarch text-valhalla rounded-full p-4  h-[5px] text-xs">
+                      HTML5
+                    </span>
+                  </div>
+              </div>
+              <img src="assets/images/portfolio.png" class="max-w-2xl" alt="portfolio initial design">
             </div>
         </div>
       </section>
     </div>
-    <!-- <header
-      class="bg-sunflower flex flex-col md:flex-row justify-center items-center py-10"
-    >
-      <img
-        class="inline-block h-72 rounded-full mx-10"
-        src="assets/images/profile pic.jpg"
-        alt="profile picture"
-      />
-      <div class="flex flex-col mx-10">
-        <h2 class="text-xl font-semibold">Hello there! 👋</h2>
-        <p class="text-2xl text-monarch font-bold">I'm Paulino.</p>
-        <h2 class="text-xl font-semibold">I'm a Frontend Engineer</h2>
-        <p class="break-words md:w-3/4 mt-5">
-          Welcome to my website! Here you can have more information about me and
-          my work
-        </p>
-      </div>
-    </header>
-    <section
-      class="container flex items-center md:w/4 flex-col py-10 text-valhalla mx-auto"
-    >
-      <h1 class="text-left text-2xl">About me</h1>
-      <p>
-        I am a Frontend Developer with 5+ years of experience. I hold a degree
-        in Systems Analysis and Development from the São Paulo Federal Institute
-        and specialize in JavaScript (ES6+), React, TypeScript, CSS3, and HTML5.
-        I love creating dynamic, responsive, and user-friendly web applications.
-        I am always up for new challenges and dedicated to delivering the best
-        results. In my free time, I enjoy watching soccer (huge Corinthians
-        fan), listening to music (huge Radiohead fan), and playing video games
-        (huge Zelda fan lol)
-      </p>
-    </section>
-
-    <h2>Education</h2>
-    <ul>
-      <li>
-        Technologist in Systems Analysis and Development at Federal Institute of
-        Education, Science and Technology of São Paulo.
-      </li>
-      <li>
-        Computer Technician at Federal Institute of Education, Science and
-        Technology of São Paulo.
-      </li>
-    </ul>
-    <h2>Skills</h2>
-    <ul>
-      <li>JavaScript</li>
-      <li>Typescript</li>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>React</li>
-    </ul>
-    <h2>Work Experience</h2>
-    <ul>
-      <li>
-        <h3>Frontend Engineer</h3>
-        <p><strong>Company:</strong> GoBots</p>
-        <p><strong>Period:</strong> Sep 2021 - Jan 2023</p>
-        <p>
-          <strong>Responsibilities:</strong> Develop and maintain web
-          applications using React, Next.js, styled-components.
-        </p>
-      </li>
-      <li>
-        <h3>Frontend Engineer</h3>
-        <p><strong>Company:</strong> Trustion</p>
-        <p><strong>Period:</strong> Mar 2020 - Sep 2021</p>
-        <p>
-          <strong>Responsibilities:</strong> Develop and maintain web
-          applications using AngularJS, Angular. UX development with Adobe XD
-        </p>
-      </li>
-      <li>
-        <h3>Frontend Developer</h3>
-        <p><strong>Company:</strong> Folha de S. Paulo</p>
-        <p><strong>Period:</strong> Nov 2019 - Mar 2020</p>
-        <p>
-          <strong>Responsibilities:</strong> Develop and maintain web
-          applications using Stylus, JavaScript ES6+, HTML5.
-        </p>
-      </li>
-      <li>
-        <h3>Web Developer</h3>
-        <p><strong>Company:</strong> Peexell</p>
-        <p><strong>Period:</strong> Mar 2019 - Jun 2019</p>
-        <p>
-          <strong>Responsibilities:</strong> Develop and maintain web
-          applications using Wordpress, SASS, Laravel.
-        </p>
-      </li>
-      <li>
-        <h3>Front end Developer</h3>
-        <p><strong>Company:</strong> Quicktech AS</p>
-        <p><strong>Period:</strong> Jan 2018 - Mar 2019</p>
-        <p>
-          <strong>Responsibilities:</strong> Develop and maintain web
-          applications using JavaScript, SASS, Bootstrap, Angular, jQuery,
-          Wordpress.
-        </p>
-      </li>
-      <li>
-        <h3>Web development intern</h3>
-        <p><strong>Company:</strong> Quicktech AS</p>
-        <p><strong>Period:</strong> Dec 2016 - Dez 2017</p>
-        <p>
-          <strong>Responsibilities:</strong> Develop and maintain web
-          applications using Twig, Wordpress, HTML, CSS and JavaScript.
-        </p>
-      </li>
-    </ul>
-    <h2>Projects</h2>
-    <p>Here is a list of some of my personal projects</p>
-    <ul>
-      <li>
-        <h3>TYP01</h3>
-        <p>
-          <strong>Technologies:</strong> React, styled-components, Node.js,
-          Neo4j
-        </p>
-        <p>
-          <strong>Description:</strong> A chatbot UI that integrates with an IBM
-          Watson bot and allows users to ask questions about the university I
-          studied in.
-        </p>
-        <p>
-          <strong>Screenshots:</strong>
-          Coming soon
-        </p>
-        <p>
-          <strong>Link:</strong>
-          <a href="#">https://paulinojunior.com.br</a>
-        </p>
-      </li>
-      <li>
-        <h3>Randomfy</h3>
-        <p><strong>Technologies:</strong> React, styled-components</p>
-        <p>
-          <strong>Description:</strong> The purpose of this web app is to "fix"
-          the Spotify's shuffle (which isn't really shuffle). The idea is to
-          offer a feature that organizes a playlist truly randomly on the queue,
-          along with some cool user statistics.
-        </p>
-        <p>
-          <strong>Link:</strong>
-          <a href="https://github.com/Paulinojr/randomfy"
-            >https://github.com/Paulinojr/randomfy</a
-          >
-        </p>
-      </li>
-    </ul>
-    <h2>Contacts</h2>
-    <ul>
-      <li>
-        <strong>Email:</strong>
-        <a href="mailto:paulino.junior@outlook.com"></a>
-      </li>
-      <li>
-        <strong>LinkedIn:</strong>
-        <a href="https://www.linkedin.com/in/paulino-junior-b4745b131/"></a>
-      </li>
-      <li>
-        <strong>Github:</strong>
-        <a href="https://github.com/Paulinojr"></a>
-      </li>
-    </ul> -->
     <script>
       const myTags = [
         "JavaScript",
@@ -513,6 +447,33 @@
         // interact with cursor move on mouse out
         keep: true,
       });
+
+      const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,  
+
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+  
+      });
+
+      const swiper2 = new Swiper('.swiper2', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,  
+
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next2',
+          prevEl: '.swiper-button-prev2',
+        },
+      });
     </script>
+
   </body>
 </html>
