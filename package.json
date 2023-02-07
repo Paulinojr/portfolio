@@ -4,9 +4,13 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "start": "npm-run-all --parallel 'watch:*'",
-    "build": "parcel build",
     "watch:start": "parcel serve src/index.html",
-    "watch:css": "tailwindcss -i src/styles.css -o dist/output.css -w"
+    "watch:css": "tailwindcss -i src/styles.css -o dist/output.css -w",
+    "prebuild-dev": "shx rm -rf dist/*",
+    "build-dev": "parcel build ./src/index.html --no-optimize --public-url ./",
+    "prebuild": "shx rm -rf dist/*",
+    "build": "parcel build ./src/index.html --public-url ./",
+    "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
@@ -14,7 +18,12 @@
     "npm-run-all": "^4.1.5",
     "parcel": "^2.8.3",
     "postcss": "^8.1.0",
+    "shx": "^0.3.4",
     "tailwindcss": "^3.2.4"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "version": "1.0.0",
+  "repository": "git@github.com:Paulinojr/portfolio.git",
+  "author": "Paulinojr <paulino.junior@outlook.com>",
+  "license": "MIT"
 }
