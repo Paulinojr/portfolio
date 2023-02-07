@@ -21,7 +21,9 @@
     "shx": "^0.3.4",
     "tailwindcss": "^3.2.4"
   },
-  "dependencies": {},
+  "dependencies": {
+    "gh-pages": "^5.0.0"
+  },
   "version": "1.0.0",
   "repository": "git@github.com:Paulinojr/portfolio.git",
   "author": "Paulinojr <paulino.junior@outlook.com>",
