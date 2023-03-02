@@ -269,6 +269,10 @@ img, video {
   margin-bottom: 1rem;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 .flex {
   display: flex;
 }
