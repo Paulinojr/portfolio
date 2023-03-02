@@ -33,7 +33,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </head>
   <body class="bg-cream overflow-x-hidden">
-    <header class="fixed mx-auto w-full z-10 bg-gradient-to-r from-sunflower">
+    <header class="fixed w-full mx-auto z-10 bg-gradient-to-r from-sunflower">
       <div class="flex justify-center items-center gap-5 p-2">
         <a href="mailto:paulino.junior@outlook.com" target="_blank"
           ><img
@@ -528,7 +528,7 @@
 
       const tagCloud = TagCloud(".tagContent", myTags, {
         // radius in px
-        radius: 200,
+        radius: screen.width > 768 ? 200 : 150,
 
         // animation speed
         // slow, normal, fast
