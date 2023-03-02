@@ -281,10 +281,6 @@ img, video {
   display: none;
 }
 
-.aspect-auto {
-  aspect-ratio: auto;
-}
-
 .h-\[32px\] {
   height: 32px;
 }
@@ -300,10 +296,6 @@ img, video {
 
 .h-full {
   height: 100%;
-}
-
-.h-2\/4 {
-  height: 50%;
 }
 
 .h-4 {
@@ -516,10 +508,6 @@ body {
 
   .md\:block {
     display: block;
-  }
-
-  .md\:inline-block {
-    display: inline-block;
   }
 
   .md\:inline {
