@@ -310,6 +310,10 @@ img, video {
   height: 5px;
 }
 
+.h-2\/4 {
+  height: 50%;
+}
+
 .w-screen {
   width: 100vw;
 }
@@ -328,6 +332,10 @@ img, video {
 
 .w-4 {
   width: 1rem;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .flex-col {
